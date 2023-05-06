@@ -33,7 +33,7 @@ jobs:
         uses: appleboy/scp-action@master
         with:
           host: 106.52.216.215
-          username: root
+          username: ${{ secrets.HOST }}
           password: 521Cuiyunxiang
           source: "./"
           target: "../usr/share/nginx/html"
