@@ -32,8 +32,8 @@ jobs:
       - name: Deploy to Server
         uses: appleboy/scp-action@master
         with:
-          host: 106.52.216.215
+          host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          password: 521Cuiyunxiang
+          password: ${{ secrets.PASSWORD }}
           source: "./"
           target: "../usr/share/nginx/html"
