@@ -36,4 +36,4 @@ jobs:
           username: root
           password: 521Cuiyunxiang
           source: "./"
-          target: "./"
+          target: "user"
